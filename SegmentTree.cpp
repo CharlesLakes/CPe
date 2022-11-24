@@ -33,3 +33,4 @@ int query(int tidx, int lo, int hi, int L, int R){
 	int leftans = query(2*tidx+1, lo, mid, L, R);
 	int rightans = query(2*tidx+2, mid+1, hi, L, R);
 	return leftans + rightans;
+}
